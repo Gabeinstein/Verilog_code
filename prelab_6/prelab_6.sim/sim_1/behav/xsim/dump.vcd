@@ -1,0 +1,60 @@
+$date
+   Tue Nov  7 09:11:28 2023
+$end
+$version
+  2023.1
+$end
+$timescale
+  1ps
+$end
+$scope module Testbench $end
+$var reg 1 ! clk $end
+$var reg 2 " dir [1:0] $end
+$var wire 3 # izq [2:0] $end
+$var wire 3 $ der [2:0] $end
+$scope module DUT $end
+$var wire 1 % clk $end
+$var wire 2 & dir [1:0] $end
+$var reg 3 ' izq [2:0] $end
+$var reg 3 ( der [2:0] $end
+$var reg 2 ) node1 [1:0] $end
+$var reg 2 * node2 [1:0] $end
+$var reg 2 + node3 [1:0] $end
+$scope module counter1 $end
+$var wire 1 % clk $end
+$var reg 2 ) count [1:0] $end
+$upscope $end
+$scope module cotroller1 $end
+$var wire 2 & control [1:0] $end
+$var wire 2 , state [1:0] $end
+$var reg 2 * left [1:0] $end
+$var reg 2 + right [1:0] $end
+$upscope $end
+$scope module decoder1 $end
+$var wire 2 - in [1:0] $end
+$var reg 3 ' out [2:0] $end
+$upscope $end
+$scope module decoder2 $end
+$var wire 2 . in [1:0] $end
+$var reg 3 ( out [2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+bx #
+bx $
+0%
+b0 &
+bx '
+bx (
+bx )
+bx *
+bx +
+bx ,
+bx -
+bx .
+$end

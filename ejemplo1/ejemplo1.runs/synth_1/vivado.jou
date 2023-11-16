@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Sep  2 23:42:02 2023
+# Process ID: 32092
+# Current directory: D:/Coding/Verilog/ejemplo1/ejemplo1.runs/synth_1
+# Command line: vivado.exe -log circuito1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuito1.tcl
+# Log file: D:/Coding/Verilog/ejemplo1/ejemplo1.runs/synth_1/circuito1.vds
+# Journal file: D:/Coding/Verilog/ejemplo1/ejemplo1.runs/synth_1\vivado.jou
+# Running On: Gabeinstein, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16890 MB
+#-----------------------------------------------------------
+source circuito1.tcl -notrace

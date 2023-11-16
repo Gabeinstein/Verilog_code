@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../prelab_6.srcs/sources_1/new/controller.sv" \
+"../../../../prelab_6.srcs/sources_1/new/counter.sv" \
+"../../../../prelab_6.srcs/sources_1/new/decoder.sv" \
+"../../../../prelab_6.srcs/sources_1/new/direccionales.sv" \
+"../../../../prelab_6.srcs/sources_1/new/direccionales_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

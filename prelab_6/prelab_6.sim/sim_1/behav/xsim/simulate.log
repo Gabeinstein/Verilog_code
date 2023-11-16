@@ -1,0 +1,23 @@
+Time resolution is 1 ps
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=00, izq=000, der=000
+clk=1, dir=01, izq=000, der=000
+clk=1, dir=01, izq=011, der=000
+clk=1, dir=01, izq=111, der=000
+clk=1, dir=01, izq=000, der=000
+clk=1, dir=01, izq=001, der=000
+clk=1, dir=10, izq=011, der=000
+clk=1, dir=10, izq=000, der=111
+clk=1, dir=10, izq=000, der=000
+clk=1, dir=10, izq=000, der=001
+clk=1, dir=10, izq=000, der=011
+clk=1, dir=11, izq=000, der=111
+clk=1, dir=11, izq=000, der=000
+clk=1, dir=11, izq=001, der=001
+clk=1, dir=11, izq=011, der=011
+clk=1, dir=11, izq=111, der=111
+$finish called at time : 21500 ps : File "D:/Coding/Verilog/prelab_6/prelab_6.srcs/sources_1/new/direccionales_tb.sv" Line 53
