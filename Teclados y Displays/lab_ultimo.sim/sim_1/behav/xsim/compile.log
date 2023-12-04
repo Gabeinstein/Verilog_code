@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/DecoDisplay.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecoDisplay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/DecoTeclado.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecoTeclado
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/Decokey.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decokey
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-311] analyzing module CC1
+INFO: [VRFC 10-311] analyzing module CC2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/controlador.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlador
+INFO: [VRFC 10-311] analyzing module CC1_write
+INFO: [VRFC 10-311] analyzing module CC2_write
+INFO: [VRFC 10-311] analyzing module CC1_barrido
+INFO: [VRFC 10-311] analyzing module CC2_barrido
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/memoria.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memoria
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/modulo_display.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modulo_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/rise_detector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rise_detector
+INFO: [VRFC 10-311] analyzing module CC1_detector
+INFO: [VRFC 10-311] analyzing module CC2_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Coding/Verilog/lab_ultimo/lab_ultimo.srcs/sources_1/new/module_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_tb
