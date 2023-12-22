@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Dec 21 17:21:56 2023
+# Process ID: 15548
+# Current directory: D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.runs/synth_1/top.vds
+# Journal file: D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.runs/synth_1\vivado.jou
+# Running On: Gabeinstein, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16890 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 470.406 ; gain = 173.160
+Command: read_checkpoint -auto_incremental -incremental {D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/utils_1/imports/synth_1/top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15880
+WARNING: [Synth 8-11065] parameter 'px_wait_time' becomes localparam in 'pixel_controller' with formal parameter declaration list [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/pixel_controller.sv:37]
+WARNING: [Synth 8-11065] parameter 'latch_time' becomes localparam in 'strip_controller' with formal parameter declaration list [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/strip_controller.sv:32]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1288.340 ; gain = 410.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_NxM' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/rom_NxM.sv:23]
+	Parameter N bound to: 1024 - type: integer 
+	Parameter M bound to: 24 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'rgb_rom.mem' is read successfully [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/rom_NxM.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'rom_NxM' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/rom_NxM.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'neopixel_controller' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/neopixel_controller.sv:23]
+	Parameter px_count_width bound to: 8 - type: integer 
+	Parameter px_num bound to: 257 - type: integer 
+	Parameter bits_per_pixel bound to: 24 - type: integer 
+	Parameter one_high_time bound to: 88 - type: integer 
+	Parameter zero_high_time bound to: 44 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'strip_controller' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/strip_controller.sv:23]
+	Parameter width bound to: 8 - type: integer 
+	Parameter px_num bound to: 257 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'strip_controller' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/strip_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_controller' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/pixel_controller.sv:23]
+	Parameter bits_per_pixel bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pixel_controller' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/pixel_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'signal_controller' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/signal_controller.sv:23]
+	Parameter bits_per_pixel bound to: 24 - type: integer 
+	Parameter one_high_time bound to: 88 - type: integer 
+	Parameter zero_high_time bound to: 44 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'signal_controller' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/signal_controller.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'neopixel_controller' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/neopixel_controller.sv:23]
+WARNING: [Synth 8-7071] port 'next_px_num' of module 'neopixel_controller' is unconnected for instance 'neopixel_unit' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/top.sv:37]
+WARNING: [Synth 8-7023] instance 'neopixel_unit' of module 'neopixel_controller' has 6 connections declared, but only 5 given [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/top.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'refresh_controller' [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/refresh_controller.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'refresh_controller' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/refresh_controller.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/sources_1/new/top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.758 ; gain = 502.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.758 ; gain = 502.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.758 ; gain = 502.754
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1380.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/constrs_1/new/const1.xdc]
+Finished Parsing XDC File [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/constrs_1/new/const1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.srcs/constrs_1/new/const1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1484.598 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'strip_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pixel_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                  iSTATE |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'strip_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             reset_state |                              001 |                               00
+        pixel_send_state |                              010 |                               01
+        pixel_wait_state |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'pixel_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom_NxM     | rom        | 1024x24       | LUT            | 
+|top         | p_0_out    | 1024x24       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     5|
+|4     |LUT2   |    12|
+|5     |LUT3   |    13|
+|6     |LUT4   |    23|
+|7     |LUT5   |    45|
+|8     |LUT6   |   110|
+|9     |MUXF7  |    17|
+|10    |MUXF8  |     1|
+|11    |FDCE   |    17|
+|12    |FDPE   |     2|
+|13    |FDRE   |    38|
+|14    |IBUF   |    12|
+|15    |OBUF   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1484.598 ; gain = 502.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1484.598 ; gain = 606.594
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1484.598 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1484.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 31572a1f
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 1484.598 ; gain = 989.309
+INFO: [Common 17-1381] The checkpoint 'D:/Coding/Verilog/Sistemas Digitales/proyecto_final/proyecto_final.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 21 17:22:30 2023...

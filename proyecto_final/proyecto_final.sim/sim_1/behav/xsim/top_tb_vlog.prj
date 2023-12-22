@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../proyecto_final.srcs/sources_1/new/neopixel_controller.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/pixel_controller.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/refresh_controller.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/rom_NxM.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/signal_controller.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/strip_controller.sv" \
+"../../../../proyecto_final.srcs/sources_1/new/top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
