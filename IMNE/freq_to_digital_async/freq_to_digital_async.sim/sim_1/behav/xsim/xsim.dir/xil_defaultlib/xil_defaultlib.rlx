@@ -1,0 +1,8 @@
+0.7
+2020.2
+Dec 14 2023
+13:13:15
+D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
+D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.srcs/sources_1/new/d_flip_flop.sv,1707707676,systemVerilog,,D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.srcs/sources_1/new/ripple_counter.sv,,d_flip_flop,,uvm,,,,,,
+D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.srcs/sources_1/new/ripple_counter.sv,1707840434,systemVerilog,,D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.srcs/sources_1/new/ripple_counter_tb.sv,,ripple_counter,,uvm,,,,,,
+D:/Coding/Verilog/IMNE/freq_to_digital_async/freq_to_digital_async.srcs/sources_1/new/ripple_counter_tb.sv,1707842113,systemVerilog,,,,ripple_counter_tb,,uvm,,,,,,

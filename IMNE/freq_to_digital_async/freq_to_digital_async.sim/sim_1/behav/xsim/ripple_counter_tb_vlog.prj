@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../freq_to_digital_async.srcs/sources_1/new/d_flip_flop.sv" \
+"../../../../freq_to_digital_async.srcs/sources_1/new/ripple_counter.sv" \
+"../../../../freq_to_digital_async.srcs/sources_1/new/ripple_counter_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
